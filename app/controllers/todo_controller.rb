@@ -7,10 +7,10 @@ class TodoController < ApplicationController
             @todo_description = "Get a job"
         @todo_pomodoro_estimate = 1
         elsif todo_id == "2"
-         @todo_description = "Study　日本語 for a couple hours"
+         @todo_description = "Study 日本語 for a couple hours"
          @todo_pomodoro_estimate = 4
         elsif todo_id == "3"
-         @todo_description = "Get enough sleep　おやすみ"
+         @todo_description = "Get enough sleep おやすみ"
          @todo_pomodoro_estimate = 1    
         elsif todo_id =="4"
         @todo_description = "道の"
