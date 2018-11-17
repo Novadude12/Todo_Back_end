@@ -41,6 +41,16 @@ li:hover{
   list-style-type:none;
 }
 
+h2{
+    display:inline-block;
+}
+
+a{
+    display:block;
+    margin:10px;
+}
+
+
 /*input:hover{
   list-style-type:line;
 }
