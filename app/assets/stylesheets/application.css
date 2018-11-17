@@ -1,15 +1,46 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+html{font-family:Comic;
+  
+  
+}
+h1{color:red}
+p{color:blue}
+.pomo-est{font-weight: bold;
+  color: #f442eb;
+  background-color: #F5F5F5;
+  border-radius: 50px;
+  font-size: 15px;
+  padding: 5px 10px 5px 10px;
+  margin: 5px;
+}
+#add-new-todo{
+    font-size:20px;
+    background-color:#f442eb;
+    border-radius: 100px;
+    display:block;
+    
+}
+
+#add-new-todo:active{
+   color: red;
+   background-color: rgb(20, 40, 60);
+}
+  
+  
+
+li{
+  list-style-type: none;
+  font-size: 24px;
+  
+}
+li:hover{
+  background-color: rgb(154, 20, 20);
+  
+}
+
+.input-stuff{
+  list-style-type:none;
+}
+
+/*input:hover{
+  list-style-type:line;
+}
