@@ -6,9 +6,9 @@
          <ul>       
              <% @todos.each do |todo| %>
              
-             <input type="checkbox" name=""/><br>
+             <li><input type="checkbox" name=""/>
              <a href="todo/show/<%= todo.id %>"><%= todo.description %></a>
-             <span class="pomodoro-estimate small-pomodoro-estimate"><%= todo.pomodoro_estimate %> pomodoro</span>
+             <span class="pomodoro-estimate small-pomodoro-estimate"><%= todo.pomodoro_estimate %> pomodoro</span></li>
             
              <%end%>
              
@@ -23,4 +23,5 @@
             <p>
                 
                         </p>
+
             
