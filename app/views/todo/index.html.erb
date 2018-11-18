@@ -1,14 +1,12 @@
 
-<h1>U R so cool</h1>
+<h1>Todo list</h1>
         <p> 
         </p>
        
          <ul>       
              <% @todos.each do |todo| %>
              
-             <li><input type="checkbox" name=""/>
-             <a href="todo/show/<%= todo.id %>"><%= todo.description %></a>
-             <span class="pomodoro-estimate small-pomodoro-estimate"><%= todo.pomodoro_estimate %> pomodoro</span></li>
+             <li><input type="checkbox" name=""/><a href="todo/show/<%= todo.id %>"><%= todo.description %></a><span class="pomodoro-estimate small-pomodoro-estimate"><%= todo.pomodoro_estimate %> pomodoro</span></li>
             
              <%end%>
              
