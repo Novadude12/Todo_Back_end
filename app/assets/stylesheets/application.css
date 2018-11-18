@@ -1,5 +1,8 @@
-html{
-  background-color: #6a7580;
+html{                     
+  /*background-color: #6a7580;*/
+  background-image: url(https://i.giphy.com/3WKYBBMUfLiUM.gif);
+  background-size: 100%;
+    /*background-image: url(https://cdn-images-1.medium.com/max/2000/1*FmEUTsJqLp9VAm0d3gcyVw.jpeg);*/
 }
 
 h1{
@@ -33,7 +36,6 @@ p{color:blue
 }
   
   
-
 li{
   list-style-type: none;
   font-size: 24px;
@@ -44,8 +46,13 @@ li:hover{
   transition: background-color .50s;
   background-color: #929bac;
   padding: 15px 20px 15px 20px;
+  opacity: .8;
+  color: #f44eca;
+  /*width: padding;*/
   
-  
+}
+h3{
+  color: #b64ef4;
 }
 
 .input-stuff{
@@ -56,7 +63,7 @@ h2{
     display:inline-block;
     font-family: cursive;
     text-decoration: underline;
-    
+    color: #c8405b;
     
     
 }

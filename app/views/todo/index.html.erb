@@ -6,7 +6,9 @@
          <ul>       
              <% @todos.each do |todo| %>
              
-             <li><input type="checkbox" name=""/><a href="todo/show/<%= todo.id %>"><%= todo.description %></a><span class="pomodoro-estimate small-pomodoro-estimate"><%= todo.pomodoro_estimate %> pomodoro</span></li>
+             <li><input type="checkbox" name=""/>
+             <a href="todo/show/<%= todo.id %>"><%= todo.description %></a>
+             <span class="pomodoro-estimate small-pomodoro-estimate"><%= todo.pomodoro_estimate %> pomodoro</span></li>
             
              <%end%>
              
@@ -18,8 +20,6 @@
                  ------->
                  <input id="add-new-todo" type="submit" value="Create new todo">
                  </form>
-            <p>
-                
-                        </p>
+          
 
             
