@@ -1,24 +1,25 @@
-<%=2+2%>
+
 <h1>U R so cool</h1>
-        <p> Hello my name is Cornell I have a lot of stuff to do,<br>
-            and learnI hope we can get along. Send help please.<br>
-            I have to learn 50 new kanji today help please<br>
-            This is an SOS message can I get an f to pay respects
+        <p> 
         </p>
-            <input type="checkbox"><input type="text">
        
-         <ul>          
-             <li><input type="checkbox"><a href="show/1">Get a job</a>  <span class="pomo-est">1 pamodero</span></li>
-             <li><input type="checkbox"><a href="show/2">Get gud at coding</a><span class="pomo-est">1 pamodero</span></li>
-             <li><input type="checkbox"><a href="show/3">Help somebody </a><span class="pomo-est">1 pamodero</span></li>
-             <li><input type="checkbox"><a href="show/4">Study japanese for a couple hours</a><span class="pomo-est">1 pamodero</span></li>
-             <li><input type="checkbox"><a href="show/5">study physics go outside, workout</a><span class="pomo-est">1 pamodero</span></li>
-             <li><input type="checkbox"><a href="show/6">sleep please you dont get enough おやすみ</a><span class="pomo-est">1 pamodero</span></li>
-             <li><input type="checkbox"><a href="show/7">clean room</a><span class="pomo-est">1 pamodero</span></li>
-         </ul> <span class="input-stuff"><input type="text"></span>
+         <ul>       
+             <% @todos.each do |todo| %>
+             
+             <input type="checkbox" name=""/><br>
+             <a href="todo/show/<%= todo.id %>"><%= todo.description %></a>
+             <span class="pomodoro-estimate small-pomodoro-estimate"><%= todo.pomodoro_estimate %> pomodoro</span>
+            
+             <%end%>
+             
+          
+         </ul> 
+                 <form action="/todo/new/">
+                <!-----
                  <span class="input-stuff"> <input type="number"></span>
-                <input id="add-new-todo" type="submit" value="enter todo">
-                
+                 ------->
+                 <input id="add-new-todo" type="submit" value="Create new todo">
+                 </form>
             <p>
                 
                         </p>
