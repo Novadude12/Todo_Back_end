@@ -25,6 +25,7 @@ class TodoController < ApplicationController
     end
     def delete
     t=Todo.find_by_id(params[:id])
+    t.delete
     redirect_to "/todo/index"
     end
 end
